@@ -1,5 +1,4 @@
-import { products } from "../utils/card-data";
-
+// Adding item to cart
 export const addToCart = (data) => (dispatch) => {
   const cartItem = [];
 
@@ -16,18 +15,10 @@ export const addToCart = (data) => (dispatch) => {
   });
 };
 
+// To remove item from cart
 export const RemoveItem = (id) => (dispatch) => {
-  // const DeleteItem = .filter((item) => item.id === id);
-
   dispatch({
     type: "REMOVE_ITEM_FROM_CART",
     payload: id,
   });
 };
-
-// export const disableIcon = (id) => (dispatch) => {
-//   dispatch({
-//     type: "DISABLEICON",
-//     payload: false,
-//   });
-// };

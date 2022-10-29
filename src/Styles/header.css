@@ -72,11 +72,6 @@
   transform: translate(-20%, -20%);
 }
 
-/* .nav-right {
-  display: flex;
-  justify-content: space-evenly;
-} */
-
 @media screen and (max-width: 770px) {
   .nav-items {
     padding: 0.8rem 0rem;

@@ -12,12 +12,6 @@ const cartReducer = (state = { cartItem: [] }, action) => {
           (item) => item.id !== action.payload.id
         ),
       };
-    // case "DISABLEICON":
-    //   return {
-    //     ...state,
-    //     icon: action.payload,
-    //   };
-
     default:
       return {
         ...state,

@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/header.css";
 import { Link } from "react-router-dom";
 
+// Font
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
