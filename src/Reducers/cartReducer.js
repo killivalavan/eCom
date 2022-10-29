@@ -1,10 +1,19 @@
 const cartReducer = (state = { cartItem: [] }, action) => {
   switch (action.type) {
     case "ADDTOCART":
-      return {
-        ...state,
-        cartItem: [...state.cartItem, action.payload],
-      };
+      // Checking existing cart item
+      const existItem = state.cartItem.filter(
+        (item) => item.id === action.payload.id
+      );
+
+      if (existItem < 1) {
+        return {
+          cartItem: [...state.cartItem, action.payload],
+        };
+      } else {
+        return { ...state };
+      }
+
     case "REMOVE_ITEM_FROM_CART":
       return {
         ...state,
@@ -12,6 +21,7 @@ const cartReducer = (state = { cartItem: [] }, action) => {
           (item) => item.id !== action.payload.id
         ),
       };
+
     default:
       return {
         ...state,
