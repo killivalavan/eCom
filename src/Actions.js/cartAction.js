@@ -1,9 +1,5 @@
 // Adding item to cart
 export const addToCart = (data) => (dispatch) => {
-  const cartItem = [];
-
-  cartItem.push(data);
-
   dispatch({
     type: "ADDTOCART",
     payload: {
