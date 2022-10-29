@@ -25,11 +25,12 @@
 }
 
 .search input {
+  font-size: 0.9rem;
   margin-left: 1.5rem;
   width: 100%;
   border: none;
   border-radius: 2px;
-  padding: 0.8rem 0.5rem;
+  padding: 0.7rem 0.5rem;
   outline: none;
 }
 
@@ -59,6 +60,7 @@
 .nav-right .badge {
   position: relative;
 }
+
 .nav-right .count {
   position: absolute;
   background-color: yellow;
@@ -80,9 +82,19 @@
   }
 
   .nav-items ul {
-    padding-bottom: 1rem;
+    width: 100%;
+    padding-top: 1rem;
   }
+
   .search {
-    width: 13rem;
+    width: 12rem;
+  }
+
+  .nav-left {
+    order: 1;
+  }
+
+  .nav-items ul li {
+    width: 8rem;
   }
 }
