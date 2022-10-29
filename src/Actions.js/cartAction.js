@@ -1,7 +1,7 @@
 // Adding item to cart
 export const addToCart = (data) => (dispatch) => {
   dispatch({
-    type: "ADDTOCART",
+    type: "ADD_TO_CART",
     payload: {
       id: data.id,
       title: data.title,

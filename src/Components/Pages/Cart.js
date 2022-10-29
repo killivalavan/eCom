@@ -18,7 +18,7 @@ const Cart = () => {
 
   return (
     <div className="container">
-      <h1>Your Cart</h1>
+      <h2>Your Cart</h2>
       {cartItem == "" ? (
         <div className="NoItem">
           <div>Your shopping cart is empty.</div>

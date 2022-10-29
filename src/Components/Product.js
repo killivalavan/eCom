@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Styles/product.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../Actions.js/cartAction";
 
 const Product = ({ product }) => {
@@ -30,6 +30,7 @@ const Product = ({ product }) => {
             <div className="bottom">
               <div className="price">₹ {product.price}</div>
               <a
+                href="#"
                 className={`icon ${disable ? "" : "active"}`}
                 onClick={addToCartHandler}
               >

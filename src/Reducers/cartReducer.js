@@ -1,6 +1,6 @@
 const cartReducer = (state = { cartItem: [] }, action) => {
   switch (action.type) {
-    case "ADDTOCART":
+    case "ADD_TO_CART":
       // Checking existing cart item
       const existItem = state.cartItem.filter(
         (item) => item.id === action.payload.id
