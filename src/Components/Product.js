@@ -30,7 +30,6 @@ const Product = ({ product }) => {
             <div className="bottom">
               <div className="price">₹ {product.price}</div>
               <a
-                href="#"
                 className={`icon ${disable ? "" : "active"}`}
                 onClick={addToCartHandler}
               >
