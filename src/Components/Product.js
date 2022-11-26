@@ -26,7 +26,8 @@ const Product = ({ product }) => {
           <div className="content">
             <div className="top">
               <h4>
-                <Link to="/ProductDetails">{product.title}</Link>
+                {/* <Link to="/ProductDetails">{product.title}</Link> */}
+                {product.title}
               </h4>
               <p>{product.description}</p>
             </div>
