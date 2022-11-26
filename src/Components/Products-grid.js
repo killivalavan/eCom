@@ -5,11 +5,13 @@ import { products } from "../utils/card-data";
 
 const ProductGrid = () => {
   return (
-    <div className="grid">
-      {products.map((data) => (
-        <Product key={data.id} product={data} />
-      ))}
-    </div>
+    <>
+      <div className="grid">
+        {products.map((data) => (
+          <Product key={data.id} product={data} />
+        ))}
+      </div>
+    </>
   );
 };
 

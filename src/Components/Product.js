@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../Actions.js/cartAction";
+import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
   const [disable, setDisable] = useState(true);
@@ -24,7 +25,9 @@ const Product = ({ product }) => {
           </div>
           <div className="content">
             <div className="top">
-              <h4>{product.title}</h4>
+              <h4>
+                <Link to="/ProductDetails">{product.title}</Link>
+              </h4>
               <p>{product.description}</p>
             </div>
             <div className="bottom">

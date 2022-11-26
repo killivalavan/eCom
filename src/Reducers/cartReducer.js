@@ -6,6 +6,7 @@ const cartReducer = (state = { cartItem: [] }, action) => {
         (item) => item.id === action.payload.id
       );
 
+      // If existItem value is 0 add new product, else do nothing
       if (existItem < 1) {
         return {
           cartItem: [...state.cartItem, action.payload],

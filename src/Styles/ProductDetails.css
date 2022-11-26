@@ -1,0 +1,25 @@
+.sticky div {
+  position: sticky;
+  top: 10%;
+  background-color: white;
+
+  z-index: 3;
+}
+
+.sticky h2 {
+  background: white;
+  position: sticky;
+  top: 20%;
+  z-index: 1;
+  background: blueviolet;
+}
+
+@media screen and (max-width: 770px) {
+  .sticky div {
+    position: sticky;
+    top: 13%;
+  }
+  .sticky h2 {
+    top: 55%;
+  }
+}
